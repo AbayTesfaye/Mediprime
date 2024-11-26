@@ -1,8 +1,8 @@
 import arrow from "../assets/arrow.svg";
-import cardOne from "../assets/cardOne.svg";
-import cardTwo from "../assets/cardTwo.svg";
-import cardThree from "../assets/cardThree.svg";
-import cardFour from "../assets/cardFour.svg";
+import cardOne from "../assets/card-one.svg";
+import cardTwo from "../assets/card-two.svg";
+import cardThree from "../assets/card-three.svg";
+import cardFour from "../assets/card-four.svg";
 import shadow from "../assets/shadow.svg";
 import {motion} from "framer-motion"
 const FirstCTA = () => {
@@ -69,6 +69,44 @@ const FirstCTA = () => {
             <span className="group-hover:text-white z-10">Discover More</span>
             <img src={arrow} alt="" className="group-hover:invert z-10"/>
           </motion.button>
+        </div>
+        <div>
+          <motion.img
+          initial ={{opacity:0, y:250}}
+          whileInView ={{
+            opacity:1,
+            y:0,
+            transition:{
+              type:"spring",
+              damping:40,
+              stiffness:160,
+              mass:1,
+              delay:0.2,
+            }
+          }}
+          viewport={{
+            amount:"some",
+            once: true
+          }}
+           src={cardFour} alt="" className="z-[12] lg:-translate-y-0 xl:tranlate-y-[250px] "/>
+            <motion.img
+          initial ={{opacity:0, y:-130}}
+          whileInView ={{
+            opacity:1,
+            y:-290,
+            transition:{
+              type:"spring",
+              damping:40,
+              stiffness:160,
+              mass:1,
+              delay:0.2,
+            }
+          }}
+          viewport={{
+            amount:"some",
+            once: true
+          }}
+           src={cardThree} alt="" className="rotate -[-30deg] z-[11] lg:-translate-y-[290px] xl:-tranlate-y-[130px] "/>
         </div>
       </div>
     </section>
