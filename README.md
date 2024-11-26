@@ -1,4 +1,4 @@
-![Build-a-Stunning-React,-Next js,-TailwindCSS- -FramerMotion](https://github.com/user-attachments/assets/ad18a824-8f6c-41a6-8802-009eb5a89362)
+<!-- ![Build-a-Stunning-React,-Next js,-TailwindCSS- -FramerMotion](https://github.com/user-attachments/assets/ad18a824-8f6c-41a6-8802-009eb5a89362)
 
 
 # React + TypeScript + Vite
@@ -30,4 +30,4 @@ export default {
 
 - Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
 - Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list -->
