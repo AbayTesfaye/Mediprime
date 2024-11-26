@@ -28,7 +28,7 @@ const Hero = () => {
         amount:"50%",
         once: true
       }}
-      className="h-auto w-full text-center text-[60px] font-semibold leading-[60px] opacity-[0.8704] md:h-[160px]md:w-[749px] md:text-[80px] lg:text-left">
+      className="h-auto w-full text-center text-[60px] font-semibold leading-[60px] opacity-[0.8704] md:h-[160px] md:w-[749px] md:text-[80px] lg:text-left lg:leading-[70px]">
         Your Partner in Health & Wellness
       </motion.h1>
       <motion.p
