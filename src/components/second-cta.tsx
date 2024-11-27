@@ -115,8 +115,8 @@ const SecondCTA = () => {
           className="z-30 mt-12 flex gap-6 md:mt-[78px]"
         >
           <button className="flex relative h-[56px] w-[180px] items-center justify-center rounded-full border-2 border-[#131316] group overflow-hidden text-base font-medium leading-[28px] text-[#445568] shadow-[0_1px_2px_0_rgba(14,24,41,0.05)] md:h-[60px] md:w-[202px] md:text-[18px]">
-            <div className="absolute -left-1 bottom-0 right-0 !mx-auto -z-10 h-[0px] w-[207px] bg-violet-900 rounded-full group-hover:h-[59px] transition-all duration-300" />
-            <span className="group-hover:text-white z-20">Book Now</span>
+            <div className="absolute -left-1 bottom-0 right-0 !mx-auto z-10 h-[0px] w-[207px] bg-violet-900 rounded-full group-hover:h-[59px] transition-all duration-300" />
+            <span className="group-hover:text-white z-10">Book Now</span>
           </button>
           <button className="flex relative h-[56px] w-[180px] items-center justify-center group overflow-hidden text-base font-medium leading-[28px] text-[#445568] shadow-[0_1px_2px_0_rgba(14,24,41,0.05)] md:h-[60px] md:w-[202px] md:text-[18px] hover:underline underline-offset-8">
             <span>Appointment</span>
