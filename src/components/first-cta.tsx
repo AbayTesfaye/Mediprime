@@ -10,7 +10,7 @@ const FirstCTA = () => {
   return (
     <section
       id="resources"
-      className="overflow-y-clip relative flex h-[750px] w-full items-start justify-center bg-violet-500 px-6 md:h-[900px] md:px-10 lg:h-[592px] lg:items-center xl:px-[159px]"
+      className="overflow-y-clip relative flex h-[750px] w-full items-start justify-center bg-violet-500 px-6 md:h-[900px] md:px-10 lg:h-[592px] lg:items-center xl:px-[80px]"
     >
       <div className="absolute bottom-0 left-0 right-0 top-0 mx-auto my-auto h-[425px] w-full rounded-full bg-white blur-[350px] sm:w-[425px]"/>
 
@@ -68,7 +68,7 @@ const FirstCTA = () => {
             once: true
           }}
            className="mt-8 flex relative h-[56px] w-[190px] items-center gap-3 justify-center rounded-full group bg-white text-base font-medium leading-[28px] text-[#314155] shadow-[0_1px_2px_0_rgba(14,24,41,0.05)] md:h-[60px] md:w-[202px] md:text-[18px] overflow-hidden">
-            <div className="absolute -left-1 bottom-0 right-0 z-0 h-[0px] w-[207px] bg-black rounded-full group-hover:h-[56px] transition-all duration-300" />
+            <div className="absolute -left-1 bottom-0 right-0 z-0 h-[0px] w-[207px] bg-black rounded-full group-hover:h-[62px] transition-all duration-300" />
             <span className="group-hover:text-white z-10">Discover More</span>
             <img src={arrow} alt="" className="group-hover:invert z-10"/>
           </motion.button>
@@ -107,7 +107,7 @@ const FirstCTA = () => {
             amount:"50%",
             once: true
           }}
-           src={cardFour} alt="cardFour" className="z-[12] lg:-translate-y-0 xl:tranlate-y-[250px] "
+           src={cardFour} alt="cardFour" className="z-[12] lg:-translate-y-0 xl:translate-y-[250px] "
             />
             <motion.img
           initial ={{opacity:0, y: -130}}
@@ -126,7 +126,7 @@ const FirstCTA = () => {
             amount:"50%",
             once: true
           }}
-           src={cardThree} alt="cardFour" className="rotate -[-30deg] z-[11] lg:-translate-y-[290px] xl:-tranlate-y-[130px] " 
+           src={cardThree} alt="cardFour" className="rotate -[-30deg] z-[11] lg:-translate-y-[290px] xl:-translate-y-[130px] " 
            />
            <motion.img
           initial ={{opacity:0, y:-500}}
@@ -145,7 +145,7 @@ const FirstCTA = () => {
             amount:"50%",
             once: true
           }}
-           src={cardTwo} alt="cardTwo"className="z-[10]  lg:-translate-y-[580px] xl:-tranlate-y-[500px]"
+           src={cardTwo} alt="cardTwo"className="z-[10]  lg:-translate-y-[580px] xl:-translate-y-[500px]"
             />
           <motion.img
           initial ={{opacity:0, y:-870}}
