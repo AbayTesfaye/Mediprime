@@ -56,9 +56,9 @@ const WhyUs = () => {
              once: true
            }}
          className="relative z-10 h-[350px] w-full object-cover sm:h-[450px] md:h-[591px] md:min-w-[400px] xl:min-w-[592px]">
-         <img src={emergency} alt=""  className={`absolute z-[14] h-full scale-[1.01] object-cover transition-all duration-300 ${position === 1 ? "opacity-100" : "opacity-0"}`} />
+         <img src={emergency} alt=""  className={`absolute z-[14] h-full w-full scale-[1.01] object-cover transition-all duration-300 ${position === 1 ? "opacity-100" : "opacity-0"}`} />
 
-         <img src={dentistry} alt="" className={`absolute z-[13] h-full scale-[1.01] object-cover transition-all duration-300 ${position === 1 ? "bg-opacity-100" : "opacity-0"}`}/>
+         <img src={dentistry} alt="" className={`absolute z-[13] h-full scale-[1.01] object-cover transition-all duration-300 ${position === 2 ? "bg-opacity-100" : "opacity-0"}`}/>
 
          <img src={surgical} alt="" className={`absolute z-[11] h-full w-full object-cover transition-all duration-300 ${position <= 3 ? "bg-opacity-100" : "opacity-0"}`}/>
 
