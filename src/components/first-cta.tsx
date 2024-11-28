@@ -9,7 +9,7 @@ import {motion} from "framer-motion"
 const FirstCTA = () => {
   return (
     <section
-      id="resources"
+      id="first-cta"
       className="overflow-y-clip relative flex h-[750px] w-full items-start justify-center bg-violet-500 px-6 md:h-[900px] md:px-10 lg:h-[592px] lg:items-center xl:px-[80px]"
     >
       <div className="absolute bottom-0 left-0 right-0 top-0 mx-auto my-auto h-[425px] w-full rounded-full bg-white blur-[350px] sm:w-[425px]"/>
