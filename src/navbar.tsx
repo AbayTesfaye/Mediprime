@@ -1,7 +1,25 @@
 import logo from "./assets/mediprime-logo.png"
 import {motion} from "framer-motion"
 const Navbar = () => {
+const handleScroll = (e:React.MouseEvent<HTMLAnchorElement,MouseEvent>) => {
 
+  // first prevent the default behavior
+  e.preventDefault();
+
+  // get the href and remove everything before the hash (#)
+  const href = e.currentTarget.href;
+
+  const targetId = href.replace(/.*#/, "");
+ 
+  // get the element by id and use scrollIntoView 
+  const element = document.getElementById(targetId);
+  element?.scrollIntoView({
+    behavior: "smooth",
+  })
+  if (element) {
+    element.scrollIntoView({ behavior: "smooth" });
+  }
+}
   return (
     <motion.nav
     initial={{ opacity: 0 }}
@@ -20,22 +38,26 @@ const Navbar = () => {
           <img src={logo} alt="" className="w-[120px] cursor-pointer md:w-[142px]" />
         </a>
         <div className="items-center justify-center gap-[20px] text:base font-semibold leading-[24px] text-[#445568] md:flex md:gap-[32px] xl:text-[18px] ">
-           <a href="/#hero" className="cursor-pointer transition-all hover:text-[#445568]/50">
+           <a href="/#hero" onClick ={handleScroll}
+            className="cursor-pointer transition-all hover:text-[#445568]/50">
             Home
           </a>
-          <a href="/#features" className="cursor-pointer transition-all hover:text-[#445568]/50">
+          <a href="/#features" onClick ={handleScroll}
+          className="cursor-pointer transition-all hover:text-[#445568]/50">
             Who we are
           </a>
-          <a href="/#first-cta" className="cursor-pointer transition-all hover:text-[#445568]/50">
+          <a href="/#first-cta" onClick ={handleScroll}
+           className="cursor-pointer transition-all hover:text-[#445568]/50">
             Payments
           </a>
-            <a href="/#services" className="cursor-pointer transition-all hover:text-[#445568]/50">
+            <a href="/#services" onClick ={handleScroll}
+             className="cursor-pointer transition-all hover:text-[#445568]/50">
             Services
           </a>
           
         </div>
       </div>
-      <a href="/#get-app">
+      <a href="/#get-app" onClick ={handleScroll}>
       <button className=" btn-shadow flex relative h-[38px] w-[110px] items-center justify-center rounded-full  bg-violet-900 group overflow-hidden text-base font-medium leading-[24px] outline outline-4 -outline-offset-[0px] outline-white/[55%] transition-all hover:outline-[5px] hover:outline-offset-1 hover:outline-white/[100%]  text-white md:h-[48px] md:w-[202px] md:text-[18px] xl:w-[154px]">
             <div className="absolute -left-1 -bottom-[2px] right-0 !mx-auto z-10 h-[0px] w-[160px] bg-white rounded-full group-hover:h-[52px] transition-all duration-300" />
             <span className="group-hover:text-black z-[11] uppercase text-[14px] ">Book Now</span>
